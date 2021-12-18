@@ -190,7 +190,7 @@ input {
 
 input::placeholder {
   font-weight: 300;
-  color: var(--pale-blue);
+  color: var(--gray);
   font-size: clamp(0.8rem, 2vw, 1rem);
 }
 
