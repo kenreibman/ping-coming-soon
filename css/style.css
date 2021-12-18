@@ -100,11 +100,6 @@ body {
   text-align: center;
 }
 
-#span--dark {
-  color: black;
-  font-weight: 700;
-}
-
 /* MAIN CONTENT */
 
 /* PING.*/
@@ -344,4 +339,10 @@ footer p {
   padding: 0;
   position: absolute;
   width: 1px;
+}
+
+/* UTILITY */
+#span--dark {
+  color: black;
+  font-weight: 700;
 }
