@@ -259,7 +259,7 @@ footer {
 }
 
 .social li a {
-  border: 1px solid lightgray;
+  border: 1px solid rgba(211, 211, 211, 0.336);
   border-radius: 50%;
 
   font-size: 0.75rem;
