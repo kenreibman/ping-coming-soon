@@ -105,6 +105,9 @@ body {
   font-weight: 700;
 }
 
+/* MAIN CONTENT */
+
+/* PING.*/
 #logo {
   margin-top: 5rem;
   width: clamp(3.5rem, 15vw, 5.2rem);
@@ -115,7 +118,7 @@ body {
   }
 }
 
-/* h1 */
+/* H1 */
 h1 {
   font-size: clamp(1.4rem, 6vw, 3rem);
 
@@ -226,6 +229,7 @@ button:hover {
   }
 }
 
+/* HERO IMAGE */
 .illustration {
   margin-top: 4.5rem;
 }
@@ -235,12 +239,12 @@ button:hover {
   }
 }
 
-/* FOOTER */
+/* FOOTER CONTAINER */
 footer {
   margin-bottom: 3rem;
 }
 
-/* LOGO STYLING */
+/* SOCIAL ICONS CONTAINER */
 .social {
   display: flex;
   justify-content: center;
@@ -254,6 +258,7 @@ footer {
   margin: 0.3rem;
 }
 
+/* SOCIAL ICON STYLING */
 .social li a {
   border: 1px solid rgba(211, 211, 211, 0.336);
   border-radius: 50%;
@@ -301,7 +306,7 @@ footer p {
   }
 }
 
-/* ERROR STYLING */
+/* FORM ERROR MESSAGE */
 .error-input {
   display: none;
 }
