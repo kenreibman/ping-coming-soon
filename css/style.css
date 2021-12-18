@@ -1,0 +1,348 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,600;0,700;1,300;1,600;1,700&display=swap");
+
+/* VARIABLES */
+:root {
+  --ff-main: "Libre Franklin", sans-serif;
+
+  --primary-blue: hsl(223, 87%, 63%);
+
+  --pale-blue: hsl(223, 100%, 88%);
+  --light-red: hsl(354, 100%, 66%);
+
+  --gray: hsl(0, 0%, 59%);
+  --very-dark-blue: hsl(209, 33%, 12%);
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* GLOBAL */
+
+body {
+  position: relative;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  font-size: 1.25rem;
+  font-family: var(--ff-main);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container {
+  margin-inline: auto;
+  width: min(90%, 70.5rem);
+}
+
+.container--narrow {
+  max-width: clamp(17.5rem, 44vw, 50rem);
+}
+
+.text-center {
+  text-align: center;
+}
+
+#span--dark {
+  color: black;
+  font-weight: 700;
+}
+
+main {
+  padding-top: 5rem;
+}
+
+@media screen and (min-width: 50rem) {
+  main {
+    padding-top: 5.5rem;
+  }
+}
+
+#logo {
+  width: clamp(3.5rem, 15vw, 5.2rem);
+}
+
+/* h1 */
+h1 {
+  font-size: clamp(1.4rem, 6vw, 3rem);
+
+  color: var(--gray);
+  font-weight: 300;
+
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 50rem) {
+  h1 {
+    margin-top: 2.5rem;
+  }
+}
+
+section p {
+  font-size: clamp(0.75rem, 2vw, 1.25rem);
+
+  margin-top: 1rem;
+}
+@media screen and (min-width: 50rem) {
+  section p {
+    margin-top: 1.2rem;
+  }
+}
+
+/* EMAIL ADDRESS FORM */
+form {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 2rem;
+}
+@media screen and (min-width: 50rem) {
+  form {
+    flex-direction: row;
+    margin-top: 2.5rem;
+    justify-content: space-between;
+  }
+}
+
+/* INPUT STYLING */
+.input-container {
+  width: 100%;
+}
+@media screen and (min-width: 50rem) {
+  .input-container {
+    width: 67%;
+  }
+}
+
+input {
+  border-radius: 2rem;
+  border: 1px solid var(--pale-blue);
+
+  width: 100%;
+
+  padding-top: 0.3rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.55rem;
+}
+@media screen and (min-width: 50rem) {
+  input {
+    padding-top: 0.8rem;
+    padding-bottom: 0.9rem;
+  }
+}
+
+input::placeholder {
+  font-weight: 300;
+  color: var(--pale-blue);
+
+  font-size: 0.6rem;
+}
+@media screen and (min-width: 50rem) {
+  input::placeholder {
+    font-size: 1rem;
+  }
+}
+
+/* BUTTON */
+
+button {
+  border: none;
+  background-color: var(--primary-blue);
+  color: white;
+
+  font-size: 0.6rem;
+  font-weight: 600;
+  border-radius: 2rem;
+
+  width: 100%;
+
+  padding: 0.7rem 1.5rem;
+
+  margin-top: 0.65rem;
+
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+button:hover {
+  opacity: 80%;
+  cursor: pointer;
+}
+@media screen and (min-width: 50rem) {
+  button {
+    margin-top: 0rem;
+    width: 31.5%;
+
+    font-size: 0.8rem;
+  }
+}
+
+.illustration {
+  margin-top: 4.5rem;
+}
+@media screen and (min-width: 50rem) {
+  .illustration {
+    margin-top: 5.7rem;
+  }
+}
+
+/* FOOTER */
+
+/* LOGO STYLING */
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+
+  padding: 0;
+}
+
+.social li {
+  margin: 0.3rem;
+}
+
+.social li a {
+  border: 1px solid lightgray;
+  border-radius: 50%;
+
+  font-size: 0.75rem;
+
+  color: var(--primary-blue);
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 1.5rem;
+  width: 1.5rem;
+
+  text-decoration: none;
+}
+
+@media screen and (min-width: 50rem) {
+  .social li a {
+    height: 2rem;
+    width: 2rem;
+
+    font-size: 1rem;
+  }
+}
+
+.social li a:hover {
+  background-color: var(--primary-blue);
+  border: 1px solid var(--primary-blue);
+  color: white;
+  cursor: pointer;
+}
+
+/* COPYRIGHT TEXT */
+footer p {
+  margin-top: 1.2rem;
+  font-size: 0.65rem;
+
+  color: var(--gray);
+}
+@media screen and (min-width: 50rem) {
+  footer p {
+    font-size: 0.75rem;
+  }
+}
+
+/* ERROR STYLING */
+.error-input {
+  display: none;
+}
+
+.show-error {
+  display: block;
+
+  color: var(--light-red);
+  font-style: italic;
+  font-weight: 300;
+
+  font-size: 0.6rem;
+  text-align: center;
+
+  margin-top: 0.25rem;
+}
+@media screen and (min-width: 50rem) {
+  .show-error {
+    position: absolute;
+    transform: translateX(1rem);
+    font-size: 0.8rem;
+  }
+}
+
+.hasError {
+  border: 2px solid var(--light-red);
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}

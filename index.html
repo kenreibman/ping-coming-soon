@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+  
+  <title>Frontend Mentor | Ping coming soon page</title>
+
+</head>
+<body>
+
+  <main>
+
+    <section class="text-center">
+      <div class="container">
+
+        <img id="logo" src="images/logo.svg" alt="PING.">
+
+        <h1>We are launching <span id="span--dark">soon!</span></h1>
+
+        <p>Subscribe and get notified</p>
+      </div>
+    </section>
+
+    <form class="container container--narrow" action="#">
+
+      <p class="input-aria-live sr-only" aria-live="polite"></p> <!-- SCREEN READER ONLY -->
+    
+    <div class="input-container">
+      <label for="email" class="sr-only">Enter email</label>
+      <input autoComplete="off" type="text" name="email" id="email" placeholder="Your email address..." >
+      <span id="errorEmail" class="error-input">Please provide a valid email address</span>
+    </div>
+
+    <button type="submit">Notify Me</button>
+
+    </form>
+
+    <section class="illustration">
+      <div class="container container--narrow">
+        <img src="images/illustration-dashboard.png" alt="Illustration of Slack Dashboard">
+      </div>
+  </section>
+
+  </main>
+
+  <footer class="text-center">
+    <ul class="social">
+      <li><a class="social__link" href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+      <li><a class="social__link" href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+      <li><a class="social__link" href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+    </ul>
+
+    <p>&copy; Copyright Ping. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
