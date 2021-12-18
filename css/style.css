@@ -83,9 +83,8 @@ body {
   font-size: 1.25rem;
   font-family: var(--ff-main);
 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: grid;
+  grid-template-rows: 1fr auto;
 }
 
 .container {
@@ -229,9 +228,10 @@ button:hover {
 @media screen and (min-width: 50rem) {
   button {
     margin-top: 0rem;
-    width: 31.5%;
 
-    font-size: 0.8rem;
+    flex: 0 1 31%;
+
+    font-size: 1rem;
   }
 }
 
@@ -245,6 +245,9 @@ button:hover {
 }
 
 /* FOOTER */
+footer {
+  margin-bottom: 3rem;
+}
 
 /* LOGO STYLING */
 .social {
